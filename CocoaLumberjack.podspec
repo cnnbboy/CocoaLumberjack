@@ -27,4 +27,5 @@ Pod::Spec.new do |s|
   s.source_files         = 'Classes/CocoaLumberjack.h', 'Classes/DD*.{h,m}','Classes/Extensions/*.{h,m}'
   s.public_header_files  = 'Classes/CocoaLumberjack.h', 'Classes/DD*.h', 'Classes/Extensions/*.h'
 
+  s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(PODS_ROOT)" }
 end
